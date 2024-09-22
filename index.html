@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>研究室ホームページ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #004080;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .intro {
+            background-color: #e6e6e6;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        .section h2 {
+            color: #003366;
+        }
+
+        .members, .publications, .equipment {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .members img, .equipment img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>〇〇研究室</h1>
+    </header>
+
+    <nav>
+        <a href="#">ホーム</a>
+        <a href="#">研究内容</a>
+        <a href="#">メンバー</a>
+        <a href="#">発表論文</a>
+        <a href="#">実験設備</a>
+        <a href="#">お問い合わせ</a>
+    </nav>
+
+    <div class="container">
+        <div class="intro">
+            <h2>ようこそ！</h2>
+            <p>私たちの研究室では、最先端の〇〇技術と応用に関する研究を行っています。</p>
+        </div>
+
+        <div class="section">
+            <h2>研究内容</h2>
+            <p>私たちの研究は〇〇を中心に、最先端の技術を用いて様々な分野で応用されています。</p>
+        </div>
+
+        <div class="section">
+            <h2>メンバー紹介</h2>
+            <div class="members">
+                <div>
+                    <img src="member1.jpg" alt="メンバー1">
+                    <p>〇〇 教授</p>
+                </div>
+                <div>
+                    <img src="member2.jpg" alt="メンバー2">
+                    <p>〇〇 博士課程</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>発表論文</h2>
+            <div class="publications">
+                <ul>
+                    <li><a href="#">論文1: 〇〇に関する研究</a></li>
+                    <li><a href="#">論文2: 〇〇の応用について</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>実験設備</h2>
+            <div class="equipment">
+                <div>
+                    <img src="equipment1.jpg" alt="設備1">
+                    <p>〇〇装置</p>
+                </div>
+                <div>
+                    <img src="equipment2.jpg" alt="設備2">
+                    <p>〇〇装置</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 〇〇研究室 | 住所: 北海道〇〇市〇〇区 | Email: contact@lab.jp</p>
+    </footer>
+</body>
+</html>
